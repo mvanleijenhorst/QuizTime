@@ -1,19 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using QuizTime.Wpf.Views.QuizManagement;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
-namespace QuizTime.UI.Views
+namespace QuizTime.Wpf.Views
 {
     /// <summary>
     /// Interaction logic for StartUserControl.xaml
@@ -28,9 +17,19 @@ namespace QuizTime.UI.Views
             _mainWindow = mainWindow;
         }
 
-        private void VragenOverzicht_Click(object sender, RoutedEventArgs e)
+        private void ManageQuiz_Click(object sender, RoutedEventArgs e)
         {
-            _mainWindow.ContentControl.Content = new VraagOverzichtUserControl(_mainWindow, null);   
+            _mainWindow.SwitchControl(new QuizListUserControl(_mainWindow));
+        }
+
+        private void StartQuiz_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void CheckQuiz_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

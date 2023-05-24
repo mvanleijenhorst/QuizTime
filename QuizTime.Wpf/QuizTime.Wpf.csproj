@@ -9,6 +9,12 @@
 
   <ItemGroup>
     <ProjectReference Include="..\QuizTime.Domain\QuizTime.Domain.csproj" />
+    <ProjectReference Include="..\QuizTime.Infra\QuizTime.Infra.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Views\QuizCheck\" />
+    <Folder Include="Views\QuizStart\" />
   </ItemGroup>
 
 
